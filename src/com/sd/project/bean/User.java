@@ -15,7 +15,7 @@ public class User {
 	@Column(name = "uid")
     private int uid;
 	
-	@Column(name = "email")
+	@Column(name = "email", unique = true)
     private String email;
 	
 	
@@ -25,6 +25,31 @@ public class User {
     
     @Column(name = "password")
     private String password;
+
+    @Column(name="organisation")
+    private String organisation;
+    
+    @Column(name="name")
+    private String name;
+    
+	public String getOrganisation() {
+		return organisation;
+	}
+
+
+	public void setOrganisation(String organisation) {
+		this.organisation = organisation;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 
 	public int getUid() {

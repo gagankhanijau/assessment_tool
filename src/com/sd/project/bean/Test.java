@@ -15,8 +15,8 @@ public class Test {
 	@Column(name = "tid")
 	int tid;
 	
-	@Column(name="Company")
-	String CompanyName;
+	@Column(name="subject")
+	String subject;
 	
 	@Column(name="setter_id")
 	int setterId;
@@ -32,12 +32,12 @@ public class Test {
 		this.tid = tid;
 	}
 
-	public String getCompanyName() {
-		return CompanyName;
+	public String getSubject() {
+		return subject;
 	}
 
-	public void setCompanyName(String companyName) {
-		CompanyName = companyName;
+	public void setSubject(String subject) {
+		this.subject = subject;
 	}
 
 	public int getSetterId() {
